@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+      "section": "REB, NPBS-1 & Overhead line"
+      
+    },
+    {
+        "id": 2,
+      "section": "Substation"
+ 
+    },
+    {
+        "id": 3,
+      "section": "MCC"
+
+    },
+    {
+        "id": 4,
+      "section": "Purchase"
+ 
+    },
+    {
+        "id": 5,
+      "section": "Electrical works"
+
+    }
+  ]
