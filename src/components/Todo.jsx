@@ -1,21 +1,48 @@
 import React from 'react';
+import { MdOutlineBookmarkAdd } from "react-icons/md";
+import AddTask from './AddTask';
 
 const Todo = () => {
+    const handleAddTask = () =>{
+
+     
+
+
+    }
     return (
-        <div>
+        <div >
+            <div className='flex justify-around'>
             <h1 className='text-3xl m-4 p-4 '>Todo lists for today</h1>
+            {/* Add Task */}
+            <button className="btn btn-md m-4 p-4" onClick={()=>document.getElementById('my_modal_4').showModal()}><MdOutlineBookmarkAdd />Add Task</button>
+            <dialog id="my_modal_4" className="modal">
+            <div className="modal-box  w-11/12 max-w-4xl flex">  
+               
+            <AddTask></AddTask>
+            <div className=" flex modal-action ">
+            <form method="dialog" className='flex'>
+            {/* if there is a button, it will close the modal */}
+            <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+            </div>
+
             {/* table */}
             <div className="overflow-x-auto m-5 p-4">
   <table className="table table-zebra">
     <thead>
-      <tr>
-        <th></th>
-        <th>Task</th>
-        <th>Details</th>
-        <th>Action</th>
-        <th>Status</th>
-        <th>Date</th>
-        <th>Remaks</th>
+      <tr >
+        <th className='font-bold'>Sl. No.</th>
+        <th className='font-bold'>Area/ Section</th>
+        <th className='font-bold'>Details of Task</th>
+        <th className='font-bold'>Action</th>
+        <th className='font-bold'>Status</th>
+        <th className='font-bold'>Date</th>
+        <th className='font-bold'>Remaks</th>
+        <th className='font-bold'></th>
       </tr>
     </thead>
     <tbody>
@@ -189,6 +216,15 @@ const Todo = () => {
         <td>France</td>
         <td>10/27/2020</td>
         <td>Aquamarine</td>
+      </tr>
+      <tr>
+        <th>20</th>
+        <td>Lorelei Blackstone</td>
+        <td>Data Coordiator</td>
+        <td>Witting, Kutch and Greenfelder</td>
+        <td>Kazakhstan</td>
+        <td>6/3/2020</td>
+        <td>Red</td>
       </tr>
       <tr>
         <th>20</th>
