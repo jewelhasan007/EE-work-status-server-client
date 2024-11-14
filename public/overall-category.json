@@ -1,27 +1,54 @@
 [
     {
         "id": 1,
-      "section": "REB, NPBS-1 & Overhead line"
-      
+      "section": "REB, NPBS-1 & Overhead line",
+      "image": "REB.png"
     },
     {
         "id": 2,
-      "section": "Substation"
+      "section": "Substation",
+      "image": "SS.jpg"
  
     },
     {
         "id": 3,
-      "section": "MCC"
-
+      "section": "MCC",
+       "image": "MCC.jpg"
     },
     {
         "id": 4,
-      "section": "Purchase"
- 
+      "section": "Pending Purchase & Materials",
+       "image": "PURCHASE.jpg"
     },
     {
         "id": 5,
-      "section": "Electrical works"
-
-    }
+      "section": "Electrical works",
+      "image": "EE.jpg"
+    },
+    {
+       "id": 6,
+      "section": "Todo Lists",
+          "image": "TODO.jpg"
+    },
+    {
+      "id": 7,
+     "section": "Foundation Work(Civil)",
+         "image": "CIVIL.jpg"
+   },
+    {
+      "id": 8,
+     "section": "Planning",
+         "image": "PLAN.jpg"
+   },
+    {
+      "id": 9,
+     "section": "Note Sheet & Approval",
+         "image": "APPROV.jpg"
+   },
+   {
+    "id": 10,
+   "section": "Manpower",
+       "image": "MAN.jpg"
+ }
+   
   ]

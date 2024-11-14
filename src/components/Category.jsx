@@ -1,18 +1,19 @@
 import React from 'react';
+import { FcElectricity } from "react-icons/fc";
+import { TfiPanel } from "react-icons/tfi";
 
 const Category = ({category}) => {
-  const {section} = category
+  const {section, image} = category
+  console.log(image)
 console.log(category)
     return (
-        <div>
-            <div className="card bg-base-100 w-46 shadow-xl">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
+        <div className='m-3 '>
+            <div className="card bg-base-100 w-66 max-h-[250px] shadow-xl">
+  <figure className='w-auto h-auto'>
+        <img src={image} alt="" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">{section}</h2>
+    <h2 className="text-1xl">{section}</h2>
     <p></p>
     <div className="card-actions justify-center">
       <button className="btn btn-primary">Details</button>

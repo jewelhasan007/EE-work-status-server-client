@@ -20,7 +20,7 @@ const [overAllData, setOverAllData] = useState([])
         <div>
         <h1>the overall page</h1>
        
-       <div className='grid grid-cols-6 m-4'>
+       <div className='grid grid-cols-5 m-4 p-3'>
        {
             overAllData.map(category => <Category key={category.id} category={category}></Category>)
         }
