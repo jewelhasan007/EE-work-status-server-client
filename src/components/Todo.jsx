@@ -16,7 +16,7 @@ const Todo = () => {
             {/* Add Task */}
             <button className="btn btn-md m-4 p-4" onClick={()=>document.getElementById('my_modal_4').showModal()}><MdOutlineBookmarkAdd />Add Task</button>
             <dialog id="my_modal_4" className="modal">
-            <div className="modal-box  w-11/12 max-w-4xl flex">  
+            <div className="modal-box  w-11/12 max-w-4xl flex justify-between">  
                
             <AddTask></AddTask>
             <div className=" flex modal-action ">
