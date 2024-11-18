@@ -13,6 +13,20 @@ const AddTask = () => {
         const taskData = {area, details, action, status, date, remarks}
         console.log(taskData)
         form.reset()
+
+            fetch('http://localhost:3000/task',{
+          method: 'POST',
+          headers: {
+            "content-type": "application/json"
+          },
+          body: JSON.stringify(taskData)
+        })
+
+        .then(res=> res.json())
+        .then(data => {
+          console.log(data)
+        })
+
     }
     return (
         <div>
