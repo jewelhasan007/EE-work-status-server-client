@@ -21,7 +21,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/todo",
-        element: <Todo></Todo>
+        element: <Todo></Todo>,
+        loader: () =>{ return fetch('http://localhost:3000/task')}
+        
       }
     ]
   },
